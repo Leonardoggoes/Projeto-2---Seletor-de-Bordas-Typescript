@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border-Radius-Picker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.css" type="module"></script>  
+  </head>
+  <body class="background">
+      <h1>SELETOR DE BORDAS</h1>
+   
+    <div class="container">  
+    <div class="border-picker"></div>  
+    
+    <div class="slider-container">
+    <input type="range" class="slider" id="slider-r" min="0" max="100" value="10">
+    <input type="range" class="slider" id="slider-l" min="0" max="100" value="10">
+    
+    <input type="range" class="slider" id="slider-t" min="0" max="100" value="10">
+    <input type="range" class="slider" id="slider-b" min="0" max="100" value="10" style="transform: scaleX(-1)">
+    </div>
+    </div>
+    
+    
+    <div class="Copy">
+
+      <span class="bordertl" id="bordertl">10%</span>
+      <span class="bordertr" id="bordertr">10%</span>
+      <span class="borderbr" id="borderbr">10%</span>
+      <span class="borderbl" id="borderbl">10%</span>
+      <button class="copybtn">COPY</button>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: none;
+  font-family:'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+
+.background {
+  background: -webkit-linear-gradient(45deg, #4c00ff, #000000);
+  background-size: 200%;
+  height: 100vh;
+  animation: colors 20s infinite;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+} 
+
+.border-picker{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10% 10% 10% 10%;
+  background: #000000;
+  box-shadow:  10px 10px 37px #ffffff,
+               -10px -10px 37px #ffffff;
+}
+
+.slider-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20em;
+  height: 20em;
+}
+
+#slider-r {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
+#slider-l {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: 70%;
+}
+
+#slider-b {
+  position: absolute;
+  top: -12%;
+  left: 50%;
+  margin-left: -40%;
+}
+
+#slider-t {
+  position: absolute;
+  bottom:-12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider{
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  padding: 0%;
+  width: 20em;
+  height: 0.1em;
+  cursor: pointer;
+  
+}
+
+.Copy{
+  border: none;
+  color:black;
+  background: white;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;  
+  text-align: right;
+  align-items: center;
+  padding-left: 20px;
+}
+.copybtn{
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #4c00ff;
+  font-weight: bold;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.copybtn:hover{
+  background-color: black;
+  color: #4c00ff;
+}
+
+
+@keyframes colors {
+  0% {
+    background-position: 0%, 50%;
+  }
+  50% {
+    background-position: 100%, 50%;
+  }
+  100% {
+    background-position: 0%, 50%;
+  }
+}
