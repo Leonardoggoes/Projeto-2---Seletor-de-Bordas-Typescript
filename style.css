@@ -6,7 +6,7 @@
 }
 
 .background {
-  background: -webkit-linear-gradient(45deg, #4c00ff, #000000);
+ background: -webkit-linear-gradient(45deg, #4c00ff, #000000);
   background-size: 200%;
   height: 100vh;
   animation: colors 20s infinite;
@@ -87,6 +87,7 @@
 }
 
 .Copy{
+  padding-left: 10px;
   display: flex;
   position: absolute;
   bottom: 2%;
@@ -95,13 +96,12 @@
   font-size: 40px;  
   text-align: right;
   align-items: center;
-  padding-left: 20px;
   border: 2px solid #4a00e0; /* define a cor e a largura da borda */
-  border-radius: 0.8em; /* define o raio da borda */
-  padding-right: 20px;
+  border-radius: 0.4em; /* define o raio da borda */
 }
 
 .copybtn {
+  margin-left: 10px;
   padding: 0;
   position: relative;
   font-family: inherit;
