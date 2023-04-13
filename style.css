@@ -87,9 +87,7 @@
 }
 
 .Copy{
-  border: none;
-  color:black;
-  background: white;
+  display: flex;
   position: absolute;
   bottom: 2%;
   left: 50%;
@@ -98,21 +96,73 @@
   text-align: right;
   align-items: center;
   padding-left: 20px;
+  border: 2px solid #4a00e0; /* define a cor e a largura da borda */
+  border-radius: 0.8em; /* define o raio da borda */
+  padding-right: 20px;
 }
-.copybtn{
+
+.copybtn {
+  padding: 0;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
   border: none;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #4c00ff;
-  font-weight: bold;
-  font-size: 40px;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
 }
-.copybtn:hover{
-  background-color: black;
-  color: #4c00ff;
+
+.copybtn svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
 }
+
+.copybtn span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  justify-items: right;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.copybtn::before,
+.copybtn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.copybtn::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.copybtn:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.copybtn:active {
+  transform: scale(0.95);
+}
+
+.botao{
+ 
+}
+  
+
+
 
 
 @keyframes colors {
